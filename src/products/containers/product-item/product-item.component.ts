@@ -7,7 +7,6 @@ import * as fromStore from '../../store';
 
 import { Pizza } from '../../models/pizza.model';
 import { Topping } from '../../models/topping.model';
-import { VisualiseToppings } from '../../store';
 
 @Component({
   selector: 'product-item',
