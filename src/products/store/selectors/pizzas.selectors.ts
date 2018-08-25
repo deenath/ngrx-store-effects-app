@@ -30,15 +30,8 @@ export const getPizzaVisualised = createSelector(
   fromToppings.getToppingEntities,
   fromToppings.getSelectedToppings,
   (pizza, toppingEntities, selectedToppings) => {
-    console.log('Pizza: ', pizza);
-    console.log('Toppings Entities: ', toppingEntities);
-    console.log('Selected Toppings: ', selectedToppings);
     const toppings = selectedToppings.map((id) => toppingEntities[id]);
-
-    return {
-      ...pizza,
-      toppings
-    };
+    return { ...pizza, toppings };
   }
 );
 
